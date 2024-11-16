@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+
+
+</head>
+
+<body>
+  <div class="container py-5">
+  <form>
+    <div class="mb-3">
+      <label for="ProductName">Product Name</label>
+      <input type="text" id="ProductName" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label for="ProductPrice">Product Price</label>
+      <input type="number" id="ProductPrice" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label for="ProductImage">Product Image</label>
+      <input type="file" id="ProductImage" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label for="ProductCategory">Product Category</label>
+      <select name="" id="ProductCategory" class="form-select">
+        <option value="Tv">Tv</option>
+        <option value="Mobile">Mobile</option>
+        <option value="Labtop">Labtop</option>
+        
+      </select>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="productSale">
+      <label class="form-check-label" for="productSale">Product Sale</label>
+    </div>
+    <div class="mb-3">
+      <label for="productDescraption">Product Descraption</label>
+   <textarea name="" class="form-control" id="productDescraption"></textarea>
+    </div>
+    <button type="button" id="addButton" class=" btn btn-outline-primary" onclick="addProduct()">Add Product</button>
+    <button type="button" id="updateButton" onclick="updateProduct()" class=" btn btn-outline-warning d-none" >Update Product</button>
+    <button type="button" class=" btn btn-outline-danger">Clear Form</button>
+  </form>
+
+  <input type="text" name="" class="form-control w-50 mx-auto my-4" onkeyup="serachProduct()" placeholder="Search................" id="serachInput">
+
+
+  <div class="row g-4" id="myRow">
+
+  </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
