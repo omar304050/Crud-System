@@ -128,7 +128,7 @@ function setFormForUpdate(i) {
   desInput.value = productList[i].des
   saleInput.value = productList[i].sale
   nameInput.value = productList[i].name
-  
+
 
 }
 
@@ -144,13 +144,24 @@ function updateProduct() {
   productList[index].des = desInput.value
 
 
+
   disPlay()
   localStorage.setItem("dataList", JSON.stringify(productList))
-
+  clearForm()
 
 
 }
 
+
+function clearForm() {
+  nameInput.value = null;
+  priceInput.value = null;
+  categoryInput.value = null;
+  desInput.value = null;
+ 
+    saleInput.checked = fales;
+
+}
 
 
 
